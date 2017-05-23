@@ -26,9 +26,10 @@ namespace WindowsFormsApp6
         public static string s = null;
         private void Form1_Load(object sender, EventArgs e)
         {
-            fileNameLabel = Elements.element.myLabel("Yaradilacaq faylin adi", 80, 61);
+            fileNameLabel = Elements.element.myLabel("Yaradılacaq faylın adı: ", 95, 61);
+            fileNameLabel.Font = new Font(fileNameLabel.Font.FontFamily, 10);
             fileName = Elements.element.myTextBox(241, 20, 248, 61);
-            confirm = Elements.element.myButton("Fayl yarat", 114, 35, 375, 115);
+            confirm = Elements.element.myButton("Fayl yarat", 114, 35, 375, 100);
             confirm.Click += Confirm_Click;
             this.Controls.Add(fileNameLabel);
             this.Controls.Add(fileName);

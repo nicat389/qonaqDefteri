@@ -19,17 +19,7 @@ namespace WindowsFormsApp6
             return label;
         }
 
-        //public Label[] myLabelArr(string text, int count)
-        //{
-        //    Label[] label = new Label[count];
-        //    for (int i = 0; i < count; i++)
-        //    {
-        //        label[i] = new Label();
-        //        label[i].Text = text;
-        //        label[i].AutoSize = true;
-        //    }
-        //    return label;
-        //}
+
         public Button myButton(string text, int width, int height, int left, int top)
         {
             Button myButton = new Button();
@@ -49,6 +39,27 @@ namespace WindowsFormsApp6
             myTextBox.Left = left;
             myTextBox.Top = top;
             return myTextBox;
+        }
+
+        public ComboBox myComboBox(string text, int width, int height, int left, int top)
+        {
+            ComboBox combo = new ComboBox();
+            combo.Width = width;
+            combo.Height = height;
+            combo.Left = left;
+            combo.Top = top;
+            combo.Text = text;
+            return combo;
+        }
+
+        public ListBox myListBox(int width, int height, int left, int top)
+        {
+            ListBox list = new ListBox();
+            list.Width = width;
+            list.Height = height;
+            list.Left = left;
+            list.Top = top;
+            return list;
         }
     }
 }

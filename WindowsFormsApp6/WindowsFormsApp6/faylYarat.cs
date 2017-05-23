@@ -52,7 +52,10 @@ namespace WindowsFormsApp6
             }
             for (int i = 0; i < k.Length; i++)
             {
-                s += k[i] + "*";
+                if (i != k.Length - 1)
+                    s += k[i] + "*";
+                else
+                    s += k[i];
             }
 
             sw.WriteLine(s);
@@ -62,7 +65,7 @@ namespace WindowsFormsApp6
         public void Read()
         {
             string s = null; int a = 0;
-            sr = new StreamReader(f.Name, System.Text.Encoding.GetEncoding(1251));
+            sr = new StreamReader(f.Name, System.Text.Encoding.UTF8);
 
         }
     }

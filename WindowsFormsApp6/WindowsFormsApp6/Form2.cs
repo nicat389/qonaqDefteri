@@ -24,6 +24,7 @@ namespace WindowsFormsApp6
         {
             this.BackColor = Color.Bisque;
             myLabel = Elements.element.myLabel("Şərh yaz!",10,10);
+            myLabel.Font = new Font(myLabel.Font.FontFamily, 10);
             name = Elements.element.myLabel("Ad:", 10, 40);
             surName = Elements.element.myLabel("Soyad:", 10, 65);
             comment = Elements.element.myLabel("Şərh:", 10, 90);
